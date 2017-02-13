@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Clicker by Polytech</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+
+	<body id = "body">
+			<section id="banner">
+				<h2><strong>Clicker !</strong> Réinventons l'enseignement </h2>
+				<p>Développé par Polytech UPMC - Etudiants EISE</p>
+			</section>
+		<form name = "myForm" id = "myForm" action = "creationFormulaire.php" method = "get">
+			<div id = "formFields"></div>
+			<input type = "submit" value = "Soumettre le questionnaire">
+		</form>
+
+		<button onclick = "AddQuestion()">Ajouter une question</button>
+		<button onclick = "RemoveQuestion()">Supprimer la dernière question</button>
+	</body>
+	<script src = "creation_formulaire.js"></script>
+		<script type = "text/javascript">
+			document.getElementById("formFields").action = "creationFormulaire.php?nbrquestion=" + id;
+		</script>
+</html>
